@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/users_db
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        connection:
+          driver_class: org.postgresql.Driver
+          url: jdbc:postgresql://localhost:5432/users_db
+          username: root
+          password: root
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+        temp:
+          use_jdbc_metadata_defaults: false
+        hbm2ddl:
+          auto: update
